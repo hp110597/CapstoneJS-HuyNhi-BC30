@@ -24,10 +24,7 @@
   display: block;
   position: relative;
   cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 .register-content .gender .description .checkmark {
   position: absolute;
