@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+
+
+.register-content {
+    background-color: #fffcfc;
+    input {
+      background-color: #fffcfc;
+    }
+    .thongbao{
+      color: red;
+      // display: none;
+    }
+    .gender {
+      .description {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        user-select: none;
+        .checkmark {
+          position: absolute;
+          top: 25%;
+          left: -45%;
+          height: 30px;
+          width: 30px;
+          background-color: #eee;
+          border-radius: 50%;
+          &::after {
+            content: "";
+            position: absolute;
+            display: none;
+            top: 9px;
+            left: 9px;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background: #AE18E2;
+          }
+        }
+        input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          z-index: 10;
+          &:checked + .checkmark::after {
+            display: block;
+          }
+        }
+      }
+    }
+    button{
+      border: none;
+      background-color: #AE18E2;
+      color: white;
+      padding: 5px 90px;
+      margin-bottom: 40px;
+    }
+  }
